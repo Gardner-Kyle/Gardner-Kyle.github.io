@@ -1,0 +1,42 @@
+// Function and variables included in code
+
+var assoArray = {firstName:"Kyle", lastName:"Gardner", age:"23"};
+var array = [0,1,2,3,4,5,6,7,8,9];
+
+fluencyWeek1(array, assoArray);
+
+function fluencyWeek1(array, assoArray) {
+
+  // Print numbers 0-9 with for loop
+  
+  for (var i = 0; i < 10; i++) {
+    print(i);
+  }
+
+  for (var variable in array) {
+    print(variable);
+  }
+
+  for (variable of array) {
+    console.log(variable);
+  }
+
+  // print the true part with conditionals
+  
+  if (true) {
+    console.log('Perfect!');
+  } else {
+    console.log('Failure!');
+  }
+
+  switch (true) {
+    case true: console.log('Perfect!');
+      break;
+    default: console.log('Failure!');
+  }
+
+  // print out my full name and age
+  
+  console.log(
+    assoArray.firstName + " " + assoArray.lastName + " age: " + assoArray.age)
+}
