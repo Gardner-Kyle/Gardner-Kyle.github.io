@@ -1,0 +1,28 @@
+/* 
+JavaScript Objects - Object Creation Functions, Inheritance, Properties, Methods, Instantiation
+*/
+
+
+// Object Creation Function:
+function Car(make, model, year, mileage) {
+  this.make = make;
+  this.model = model;
+  this.year = year;
+  this.mileage = mileage;
+  
+  this.go() {do stuff..};
+}
+// This function is the prototype for the object Car.
+
+
+// Inheritance & Properties & Methods & Instantiation:
+
+// From this prototype objects can be created and they will inherit it's properties and functions. 
+// This would be an instantiation of the Car prototype
+
+var corolla = new Car("toyota", "corolla", "2005", "150000");
+
+
+
+
+
