@@ -1,0 +1,26 @@
+// Local storage allows the user to store data in the web browser
+
+// Set data:
+localStorage.setItem("mytime", Date.now());
+sessionStorage.mytime = Date.now();
+
+// There is now a variable named mytime in the localStorage and sessionStorage and they contain the value of Date.now(). 
+// SessionStorage can asscess its members using dot-notation.
+// SessionStorage can only store the variable fr the current browser session, and it will then be removed automatically.
+
+
+// Get data:
+var time = localStorage.getItem("mytime", Date.now());
+var timeS = sessionStorage.mytime;
+
+// Local Storage keeps its values permanently, While sessionStorage does not.
+// The variable time now contains the value of mytime that is stored in localStorage.
+// The variable timeS contains the value of what was stored in sessionStorage in mytime.
+
+
+// Remove data:
+localStorage.removeItem("mytime");
+sessionStorage.removeItem("mytime");
+
+// The localStorage variable mytime is no longer stored in localStorage or sessionStorage.
+// sessionStorage cannot remove items from storage with dot-notation.
