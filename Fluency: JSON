@@ -1,0 +1,21 @@
+// When we get a JSON object from the API we are working with we need to 
+// convert it to the object type that we want. To do this, we use JSON.parse()
+
+// JSON that we receive from server:
+'{ "name":"John", "age":30, "city":"New York"}'
+
+// To parse:
+var obj = JSON.parse('{ "name":"John", "age":30, "city":"New York"}');
+
+// The JSON.parse() method looks through the string that we received 
+// from the server for specific notifiers and then turns that string into and object.
+
+
+// When we have an object that we want to send to our controller in the API, 
+// we need to first turn it to JSON so that it can be received in JSON
+
+// Object we want to turn to JSON:
+var obj = { name: "John", age: 30, city: "New York" };
+
+// To stringify:
+var myJSON = JSON.stringify(obj);
