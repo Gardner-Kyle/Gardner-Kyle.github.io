@@ -1,0 +1,14 @@
+// Step 1: create something stylable in your HTML
+<p id="p2">Hello World!</p>
+
+// Step 2: create a script section and access the style of any element by id
+<script>
+  document.getElementById("p2").style.color = "blue";
+</script>
+
+//Result: on loading, the web page element with the id 'p2' will be blue
+
+//JavaScript is great because logic can be added to any HTML document programatically
+
+// Javascript can also be used in other places:
+onclick="document.getElementById('p2').style.color = 'red'"
