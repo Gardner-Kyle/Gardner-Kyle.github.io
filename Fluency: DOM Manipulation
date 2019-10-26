@@ -1,0 +1,20 @@
+DOM Manipulation Using createElement, appendChild, insertBefore, removeChild, etc.
+
+// Create an Element: this creates an element for the document
+var btn = document.createElement("BUTTON");
+// this creates a button to be appended to th document
+
+// Append an Element: this adds the element to a specific area of the document
+btn.innerHTML = "CLICK ME";     
+document.body.appendChild(btn); 
+// this adds text to and then appends(adds) the button to the body section of the document
+
+// Insert Before Element: this inserts an additional child before a chosen child
+var list = document.getElementById("myList");  
+list.insertBefore(newItem, list.childNodes[0]);
+// this inserts an extra element called 'newItem' into the list just before the element at the '0' index of the list
+
+// Remove Element: this removes a specified element from a list or document
+var list = document.getElementById("myList");
+list.removeChild(list.childNodes[0]); 
+// this removes the element of the list at the '0' index of the list
