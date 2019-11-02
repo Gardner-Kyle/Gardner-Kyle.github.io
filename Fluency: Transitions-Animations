@@ -1,0 +1,20 @@
+// Animations from Javascript
+
+function move() {
+  var elem = document.getElementById('block');
+  var pos = 0;
+  var id = setInterval(frame, 10);
+  function frame() {
+    if (pos == 350) {
+    //check animation if finished
+      clearInterval(id);
+    } else {
+    //animate
+      pos++;
+      elem.style.top = pos + 'px';
+      elem.style.left = pos + 'px';
+    }
+  }
+}
+
+// Controlling Transitions is much like controlling any CSS property, which I have already covered in another section.
