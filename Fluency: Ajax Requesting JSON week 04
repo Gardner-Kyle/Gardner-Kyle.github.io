@@ -1,3 +1,9 @@
+/*
+   Ajax is a way to communicate with a server from a web page. Data can be sent or recieved by using 
+   an Ajax request object, and a webpage can even be update real-time using Ajax. By using Ajax, websites 
+   are able to save user data and provide dynamic feedback from databases on whatever server they are working from.
+*/
+
 // Step 1: Create a request object
 
 var xhttp = new XMLHttpRequest();
