@@ -2,7 +2,13 @@
 JavaScript Objects - Object Creation Functions, Inheritance, Properties, Methods, Instantiation
 */
 
+// Object: An instance or replica of a class that has certain traits that belong to it. 
+// For example, a car is an object that has doors, wheels, seats, AC etc...
 
+// Objects have variables: entry, doors and seating are variable in this case.
+var car = new Car {entry: "doors", seating: "seats"};
+
+// JavaScript Objects can be created in many ways:
 // Object Creation Function:
 function Car(make, model, year, mileage) {
   this.make = make;
@@ -13,6 +19,7 @@ function Car(make, model, year, mileage) {
   this.go() {do stuff..};
 }
 // This function is the prototype for the object Car.
+// We have created a Car object now that can be used as a prototype for other car objects.
 
 
 // Inheritance & Properties & Methods & Instantiation:
@@ -22,6 +29,19 @@ function Car(make, model, year, mileage) {
 
 var corolla = new Car("toyota", "corolla", "2005", "150000");
 
+// To access the variables in an object you can use either dot notation or bracket notation:
+// Dot:
+corolla.make;
+// Bracket:
+corolla["make"];
+
+// Full Example:
+var person = new Person {height: 6, weight: 180};
+if (person.height == 6) {
+  print("success!");
+}
+
+// success!
 
 
 
