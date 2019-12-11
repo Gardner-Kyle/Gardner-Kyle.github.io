@@ -1,3 +1,10 @@
+// JSON parse: JSON is a notation or format that we put objects into in order to send them between server and project. 
+// The parse() method in the JSON library will take the JSON object that the project recieves and return it to its former 
+// normal object notation.
+
+// JSON stringify: This is a method that does the exact opposite as the parse method, by formatting objects that we want to 
+// send from our project into JSON so they can be sent.
+
 // When we get a JSON object from the API we are working with we need to 
 // convert it to the object type that we want. To do this, we use JSON.parse()
 
@@ -19,3 +26,18 @@ var obj = { name: "John", age: 30, city: "New York" };
 
 // To stringify:
 var myJSON = JSON.stringify(obj);
+
+// FULL EXAMPLE: Stringify an object into JSON and send it, then receive the 
+// same object in JSON and parse it to get the original object again.
+
+var dataObject = {"data1": 100, "data2": 200, "data3": 300};
+function getJSONdata() {
+    var xhttp = new XMLHttpRequest();
+    xhttp.onreadystatechange = function() {
+        if (this.readyState == 4 && this.status == 200) {
+            this.dataObject = JSON.parse(this.responseText);
+       }
+    };
+    xhttp.open("GET", "ajax_info.txt", true);
+    xhttp.send(JSON.stringify(this.dataObject));
+}
