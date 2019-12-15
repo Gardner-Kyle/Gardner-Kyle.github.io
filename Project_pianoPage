@@ -2,8 +2,8 @@
 <html lang="en-us">
   <head>
     <meta charset="utf-8" id="Kyle">
-    <title>Kyle Gardner's Assignments</title>
-    <link rel="stylesheet" type="text/css" href="assign07.css">
+    <title>Kyle Gardner's Project</title>
+    <link rel="stylesheet" type="text/css" href="Project_piano.css">
   </head>
   <script>
     function register() {
